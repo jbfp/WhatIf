@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="48909JakobPedersen.Whatif" Publisher="CN=C2986D09-EA58-44FC-8CB1-909F25A1EFAA" Version="1.0.0.2" />
+  <Properties>
+    <DisplayName>What if?</DisplayName>
+    <PublisherDisplayName>Jakob Pedersen</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="WhatIf.App">
+      <VisualElements DisplayName="What if?" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="What if? is an app which display the latest and greatest tweets which includes the phrase &quot;What if&quot; posed as a question." ForegroundText="dark" BackgroundColor="#9AE4E8" ToastCapable="false">
+        <DefaultTile ShortName="What if?" />
+        <SplashScreen Image="Assets\WhatIfSplash.png" BackgroundColor="#9AE4E8" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
