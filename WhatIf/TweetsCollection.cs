@@ -19,7 +19,7 @@ namespace WhatIf
             if (App.HasInternet() == false)
                 return new LoadMoreItemsResult { Count = 0 };
 
-            const string baseUrl = "http://search.twitter.com/search.json?rpp={0}&max_id={1}&result_type=mixed&lang=en&q=%22What%20if%22";
+            const string baseUrl = "http://search.twitter.com/search.json?rpp={0}&max_id={1}&result_type=mixed&lang=en&q=%22What%20if%22-filter:retweets";
             string url = string.Format(baseUrl, count, Count == 0 ? 0 : this.Min(tweet => tweet.id));
 
             using (var webClient = new HttpClient())
